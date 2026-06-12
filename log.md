@@ -1,5 +1,38 @@
 # Log
 
+## [2026-06-12] ingest | Top 5 Open-Source Agentic AI Frameworks in 2026
+
+### Source
+- Created: `wiki/sources/top-5-agentic-frameworks-2026.md` — AIMultiple benchmark of LangChain, LangGraph, AutoGen, CrewAI (2,000 runs across 5 tasks)
+- Raw file had been sitting in `raw/` since 2026-05-15 with no ingest (caught by lint)
+
+### Key insights
+- With the same LLM, framework loop architecture dominates agent behavior (pivot capacity, cost, failure modes)
+- Goal-centric (LangGraph/AutoGen, ~90% pivot on tool failure) vs plan-centric (CrewAI, 0% pivot) is the key behavioral split
+- CrewAI's retry/verification machinery can corrupt parameters the LLM originally got right
+- LangChain treats tool exceptions as fatal by default — resilience requires explicit configuration
+
+### Pages created/updated
+- Created: [[agentic-frameworks]] (concept) — first non-Claude-Code agentic content in the wiki
+- Updated: [[agentic-workflows]], [[automation]], [[self-annealing]], [[model-context-protocol]] — backlinks and framework context
+
+### Tags
+- #agentic-ai, #technology, #frameworks
+
+## [2026-06-12] lint | Wiki health check (2026-06-12)
+
+### Fixed
+- 3 true orphans: backlinks added for `anatomy-of-the-.claude-folder` (4 concepts), `prompting`, `prompt-engineering-hacks`
+- Phantom link `[[Nivetha Suruliraj]]` in `prompt-compression.md` frontmatter → plain text
+- Path-prefixed links in `prompt-engineering-hacks.md` → bare format
+- Placeholder Connections prose in `google-ai-prompt-engineering-course.md` → real wiki links
+- Index drift: added `best-practices-for-skill-creators` and `optimizing-skill-descriptions`; added Entities/Insights sections; re-filed `ai-2027-project`
+
+### Status
+- No contradictions, no duplicates, no stale content
+- Near-orphan leaf nodes accepted intentionally (documented in patterns.md)
+- Gap caught: un-ingested raw file → ingested same session (see entry above)
+
 ## [2026-06-05] lint | Wiki health check (2026-06-05)
 
 ### Fixed

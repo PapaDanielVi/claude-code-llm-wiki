@@ -3,10 +3,10 @@ title: "Prompt Compression"
 type: source
 source: "https://www.ibm.com/think/tutorials/prompt-compression"
 author:
-  - "[[Nivetha Suruliraj]]"
+  - "Nivetha Suruliraj"
 published:
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-06-12
 description: "Optimization technique for reducing LLM input size while preserving essential semantic information"
 tags:
   - "source"

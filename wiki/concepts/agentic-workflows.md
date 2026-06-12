@@ -2,7 +2,7 @@
 title: "Agentic Workflows"
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-12
 aliases:
   - "agentic AI"
   - "AI agents"
@@ -68,6 +68,7 @@ Spawning child agents from a parent agent for parallel or nested task execution.
 - [[model-context-protocol]] — Protocol for tool integration
 - [[automation]] — Related automation concepts
 - [[ai-scaffold-hierarchy]] — Scaffold hierarchy: prompts → skills → plugins → MCPs
+- [[agentic-frameworks]] — Open-source orchestration frameworks (LangChain, LangGraph, AutoGen, CrewAI) that implement the agentic loop outside Claude Code
 
 ## Notes
 

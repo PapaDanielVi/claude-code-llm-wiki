@@ -2,7 +2,7 @@
 title: "claude-code-llm-wiki Index"
 type: index
 created: 2026-05-06
-updated: 2026-06-05
+updated: 2026-06-12
 ---
 
 # Index
@@ -30,6 +30,9 @@ updated: 2026-06-05
 - [how-claude-code-works-large-codebases](sources/how-claude-code-works-large-codebases.md) — Agentic search vs RAG, five extension points, large codebase patterns for monorepos and legacy systems
 - [introducing-dynamic-workflows](sources/introducing-dynamic-workflows.md) — Dynamic workflows in Claude Code: parallel subagents, verification loops, large-scale migrations
 - [claude-code-dynamic-workflow-patterns](sources/claude-code-dynamic-workflow-patterns.md) — Six core design patterns for dynamic workflows: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament, loop-until-done
+- [best-practices-for-skill-creators](sources/best-practices-for-skill-creators.md) — guide for writing effective skills grounded in real expertise
+- [optimizing-skill-descriptions](sources/optimizing-skill-descriptions.md) — skill description as trigger mechanism: imperative phrasing, eval queries, near-misses
+- [top-5-agentic-frameworks-2026](sources/top-5-agentic-frameworks-2026.md) — AIMultiple benchmark of LangChain, LangGraph, AutoGen, CrewAI (2,000 runs): framework architecture dominates agent behavior
 
 ## Concepts
 - [agentic-data-analysis](concepts/agentic-data-analysis.md) — using AI agents (Claude Code) to analyze business data without code
@@ -39,7 +42,7 @@ updated: 2026-06-05
 - [automation](concepts/automation.md) — creating systems that operate without continuous human input; extends to cognitive tasks with agentic workflows
 - [self-annealing](concepts/self-annealing.md) — self-healing pattern: workflows that detect errors, diagnose root causes, and recover autonomously
 - [agentic-workflows](concepts/agentic-workflows.md) — goal-driven AI processes: plan, decide, adapt, iterate without restarting
-- [ai-2027-project](entities/ai-2027-project.md) — research scenario forecasting superhuman AI by 2027
+- [agentic-frameworks](concepts/agentic-frameworks.md) — open-source orchestration frameworks (LangChain, LangGraph, AutoGen, CrewAI, Swarm); loop architecture determines agent behavior
 - [agi-timeline](concepts/agi-timeline.md) — predicted milestones: SC (Mar 2027) → ASI (Dec 2027)
 - [ai-alignment](concepts/ai-alignment.md) — alignment problem and safety techniques
 - [context-management](concepts/context-management.md) — token-efficient context architecture, progressive disclosure, memory strategies
@@ -50,6 +53,12 @@ updated: 2026-06-05
 - [skill-design](concepts/skill-design.md) — creating effective reusable agent instruction sets
 - [soft-skills](concepts/soft-skills.md) — communication, leadership, conflict resolution, and career growth as Claude skills
 - [prompting](concepts/prompting.md) — effective prompting framework: principles for creating reliable, high-quality LLM outputs through brevity, clarity, structure, and testing
+
+## Entities
+- [ai-2027-project](entities/ai-2027-project.md) — research scenario forecasting superhuman AI by 2027
+
+## Insights
+- (none yet)
 
 ## Assets
 - (none yet)

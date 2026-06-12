@@ -2,7 +2,7 @@
 title: Claude Skills
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-12
 aliases:
   - skill
   - skills
@@ -49,6 +49,7 @@ MCP provides the transport, Skills provide the direction.
 - [[agentic-workflows]] — How skills fit into agentic workflow architecture
 - [[how-claude-code-works-large-codebases]] — Skills for progressive disclosure on-demand loading
 - [[introducing-dynamic-workflows]] — Skills invoked within dynamic workflow agents
+- [[anatomy-of-the-.claude-folder]] — Where skills live on disk (`.claude/skills/` vs `~/.claude/skills/`)
 
 ## Connections
 

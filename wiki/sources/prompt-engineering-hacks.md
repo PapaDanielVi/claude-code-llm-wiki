@@ -2,7 +2,7 @@
 title: "Prompt Engineering Hacks in 53 Mins (GPT, Claude)"
 type: source
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-12
 tags: ["prompt-engineering", "llm", "ai", "best-practices"]
 aliases: ["prompt-engineering-tips", "llm-prompting"]
 ---
@@ -29,8 +29,9 @@ Key insights from Nick's video on prompt engineering best practices for getting 
 - **Choose appropriate models**: Don't overspend on expensive models unnecessarily, but don't cripple performance by using overly cheap models for important tasks
 
 ## Connections
+- Concept page: [[prompting]] — this source's key points are propagated there
 - Related to: [[prompt-compression]], [[ai-scaffold-hierarchy]]
-- Could connect to: [[concepts/automation]], [[concepts/claude-skills]]
+- Could connect to: [[automation]], [[claude-skills]]
 
 ## Notes
 The speaker emphasizes that many prompt engineering "hacks" are actually just applications of understanding how LLMs work fundamentally. The most effective prompts combine brevity, clarity, structure, and empirical testing rather than relying on complex or verbose instructions.

@@ -1,18 +1,22 @@
 # Health Check
 
-Last checked: 2026-06-05
+Last checked: 2026-06-12
 
-## Status: Mostly Healthy (Minor Issues)
+## Status: Healthy
 
 ### Checks
 - [x] Contradictions between pages — none found
-- [x] Stale claims — all pages fresh (created 2026-05-06 to 2026-06-04)
-- [~] Orphan pages — 7 pages with ≤1 inbound link (review in patterns.md)
-- [x] Gaps — none (all wiki links resolve)
-- [x] Neglected pages — none (>30 days since update)
-- [!] Structural issues — 1 source missing Notes section, 1 concept has path-prefixed links (prompting.md)
-- [x] Wiki link format — standardized (path prefixes removed from previous issues)
-- [x] Frontmatter consistency — resolved
+- [x] Stale claims — none found
+- [x] Orphan pages — 3 true orphans found (anatomy-of-the-.claude-folder, prompting, prompt-engineering-hacks) and fixed via backlinks; near-orphan leaf nodes accepted intentionally
+- [x] Gaps — phantom author link fixed; un-ingested raw file (Top 5 agentic frameworks) ingested
+- [x] Neglected pages — none
+- [x] Structural issues — path-prefixed links and placeholder Connections sections fixed
+- [x] Index sync — 2 missing sources added; Entities/Insights sections added; ai-2027-project re-filed under Entities
+- [x] Frontmatter consistency — consistent
+
+### Notes
+- Content still clusters in two domains: AI futures and agentic AI/skill design. First non-Claude-Code agentic content added this pass (`agentic-frameworks`).
+- `wiki/insights/` remains empty — no query syntheses filed yet.
 
 ### Next check due
-2026-07-05
+2026-07-12

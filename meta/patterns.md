@@ -2,6 +2,43 @@
 
 Tracked patterns and anomalies across the wiki.
 
+## Lint Check — 2026-06-12
+
+### ✅ Contradictions
+- None detected.
+
+### ✅ Stale Content
+- No superseded claims identified.
+
+### ⚠️ Orphans (0 inbound links) — fixed this pass
+- `anatomy-of-the-.claude-folder` — linked OUT to 4 concepts but none linked back (broken bidirectionality). Fixed: backlinks added to `claude-skills`, `context-management`, `skill-design`, `model-context-protocol`.
+- `prompting` (concept) — never linked from its own source pages. Fixed: links added from `prompt-engineering-hacks` and `google-ai-prompt-engineering-course`.
+- `prompt-engineering-hacks` (source) — no inbound links. Fixed: linked from `prompting` concept and `google-ai-prompt-engineering-course`.
+
+### ⚠️ Gaps — fixed this pass
+- `wiki/sources/prompt-compression.md` frontmatter contained a phantom link `[[Nivetha Suruliraj]]` (author, no page intended). Converted to plain text.
+- `raw/Top 5 Open-Source Agentic AI Frameworks in 2026.md` was present in `raw/` since 2026-05-15 but never ingested (no log entry, no source page). Ingested this pass → `sources/top-5-agentic-frameworks-2026` + new concept `agentic-frameworks`.
+
+### ⚠️ Index Drift — fixed this pass
+- `best-practices-for-skill-creators` and `optimizing-skill-descriptions` source pages were missing from `wiki/index.md`.
+- `ai-2027-project` (entity) was filed under Concepts; index had no Entities/Insights sections. Restructured.
+
+### ⚠️ Structural Issues — fixed this pass
+- `prompt-engineering-hacks.md` had path-prefixed links (`[[concepts/automation]]`, `[[concepts/claude-skills]]`) — same defect class previously fixed in `prompting.md` on 2026-06-05. Normalized.
+- `google-ai-prompt-engineering-course.md` Connections section contained placeholder prose ("Links to prompting concepts in wiki/concepts/") instead of actual wiki links. Replaced with real links.
+
+### ✅ Neglected Pages
+- None — all pages updated within the last 30 days or untouched with no related new sources.
+
+### ✅ Duplicates
+- None. `skill-authoring-best-practices` and `best-practices-for-skill-creators` cover adjacent ground but trace to distinct raw documents; kept separate.
+
+### ✅ Unsourced Claims
+- Concept pages trace to source pages. New `agentic-frameworks` page labels its one extrapolation explicitly as inference.
+
+### Near-orphans (1 inbound link) — accepted as leaf nodes
+- `ai-2027-project`, `llm-dcp`, `karpati-claude-best-practices`, `claude-skills-build-first-assistant`, `self-annealing-ai-agents-explained`, `mechanistic-interpretability`/`anthropic-interpretability` pair. These are intentionally narrow; no forced connections added (hallucination guard).
+
 ## Lint Check — 2026-06-05
 
 ### ✅ Contradictions

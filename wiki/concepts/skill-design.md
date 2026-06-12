@@ -2,7 +2,7 @@
 title: "Skill Design"
 type: "concept"
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-06-12
 tags:
   - "skill-design"
   - "agentic-ai"
@@ -149,6 +149,7 @@ Skills can bundle dependencies: `references/` (docs, examples), `scripts/` (help
 - [[claude-code-skill-patterns]] — Authorship patterns and triggering
 - [[how-claude-code-works-large-codebases]] — Plugin distribution, organizational rollout patterns
 - [[introducing-dynamic-workflows]] — Workflow orchestration at scale with parallel subagents
+- [[anatomy-of-the-.claude-folder]] — Skill structure mirrors the `.claude/skills/` pattern
 
 ## Connections
 
