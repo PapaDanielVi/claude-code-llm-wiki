@@ -2,10 +2,14 @@
 title: "Mechanistic Interpretability"
 type: concept
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-12
 tags: [ai-futures, existential-risk, research]
 aliases: ["mech interp", "reverse-engineering ai", "feature visualization", "sparse autoencoders"]
 ---
+
+## ⚠️ Conflicts — Provenance Unverified (2026-06-12)
+
+This page's only source is [[anthropic-interpretability]], which a 2026-06-12 audit found has **no raw document behind it** (see the Conflicts section there). Mechanistic interpretability is a real research field, but the specific claims below (especially the "golden ticket hypothesis" framing) cannot be traced to any source in this repo. Treat as unverified pending resolution.
 
 ## Summary
 

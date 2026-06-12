@@ -2,7 +2,7 @@
 title: Google AI Prompt Engineering Course
 type: source
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-12
 tags: [ai-futures, technology]
 aliases: [Google Prompt Engineering, Prompt Engineering Course]
 ---
@@ -61,9 +61,9 @@ This source summarizes Google's AI Prompt Engineering Course, covering fundament
 - **Agent X**: Expert feedback agent for personalized consulting on topics
 
 ## Connections
-- Links to prompting concepts in wiki/concepts/
-- Related to AI agent patterns in wiki/concepts/
-- Connects to techniques in wiki/insights/
+- Concept page: [[prompting]] — core framework, iteration methods, and advanced techniques propagated there
+- Related to: [[prompt-engineering-hacks]] — overlapping prompting best practices from a practitioner angle
+- Related to: [[agentic-workflows]] — the course's AI agents framework (persona, context, interactions, stop phrase, feedback)
 
 ## Notes
 Course emphasizes "Always Be Iterating" (ABI) mindset and provides practical frameworks applicable across various AI use cases from content creation to complex problem-solving.

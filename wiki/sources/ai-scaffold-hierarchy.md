@@ -2,10 +2,10 @@
 title: "You're Wasting 40% Of Your AI Time On Something Fixable"
 type: source
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-06-12
 tags: [ai-futures, technology]
 source-type: video/transcript
-author: "Simon Willison"
+author: unknown
 ---
 
 # You're Wasting 40% Of Your AI Time On Something Fixable
@@ -89,4 +89,4 @@ A comprehensive explainer on the "agentic scaffold" - the middleware layer surro
 
 ## Source
 
-https://simonwillison.net/2026/May/6/ai-scaffold/
+Raw video transcript: `raw/You're Wasting 40% Of Your AI Time On Something Fixable.md`. The speaker is not identified in the transcript; they discuss the scaffold hierarchy primarily through the lens of OpenAI Codex plugins (the concepts generalize to Claude Code). A previous version of this page attributed the piece to Simon Willison with a simonwillison.net URL — neither appears in the raw transcript; removed 2026-06-12.

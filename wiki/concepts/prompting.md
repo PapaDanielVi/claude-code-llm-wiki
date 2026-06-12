@@ -2,7 +2,7 @@
 title: "Effective Prompting Framework"
 type: concept
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-12
 tags: ["prompt-engineering", "llm", "best-practices", "framework"]
 aliases: ["prompting-principles", "llm-prompting-framework"]
 ---
@@ -81,7 +81,7 @@ For creating specialized AI agents (from Google's course):
 5. **Provide Feedback**: Summarize advice and improvement areas after conversation
 
 ## Connections
-- Related to: [[prompt-compression]], [[ai-scaffold-hierarchy]], [[google-ai-prompt-engineering-course]]
+- Related to: [[prompt-compression]], [[ai-scaffold-hierarchy]], [[google-ai-prompt-engineering-course]], [[prompt-engineering-hacks]]
 - Applied in: [[automation]], [[claude-skills]], [[agentic-workflows]], [[agents-vs-skills]]
 
 ## Notes

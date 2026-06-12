@@ -2,7 +2,7 @@
 title: "Context Management"
 type: "concept"
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-06-12
 tags:
   - "context-management"
   - "agentic-ai"
@@ -46,6 +46,8 @@ Don't use expensive models for easy tasks. Match model capability to task comple
 - Related: [[agentic-data-analysis]] — CLAUDE.md as business context for data analysis
 - Related: [[prompt-compression]] — upstream input reduction using extractive/summarization/token-optimization pipeline
 - Source: [[skills-and-agents-rules]] — operational rules for context management
+- Source: [[anatomy-of-the-.claude-folder]] — CLAUDE.md, `.claude/rules/`, and settings as the on-disk context layer
+- Source: [[claude-skills-technical-report]] — the three-level skill loading model as a concrete progressive-disclosure implementation
 
 ## Notes
 

@@ -1,5 +1,63 @@
 # Log
 
+## [2026-06-12] lint | Raw-vs-wiki provenance audit (full)
+
+### Critical finding (open)
+- `anthropic-interpretability` + `mechanistic-interpretability` have **no raw source** — the 2026-05-06 "Interpretability" ingest appears to have fabricated content instead of digesting `Executive_Summary.pdf` (which is about Claude Skills). Both pages flagged with ⚠️ Conflicts sections; deletion proposed, awaiting approval.
+
+### Fixed
+- "Andre Karpati" → **Andrej Karpathy** in `karpati-claude-best-practices` (speech-to-text artifact baked in as a real name); removed GitHub URL not present in the raw
+- Removed fabricated "Simon Willison" attribution + URL from `ai-scaffold-hierarchy` (speaker unidentified in raw)
+- `agentic-workflows-business-transcription` rewritten from TOC into real digest; DO framework corrected to "Directive Orchestration **and Execution**" here and in `agentic-workflows`
+- `ai-2027` TSMC claim tightened to ">80% of American AI chips"
+
+### Verified accurate
+- ai-2027 numerics, llm-dcp 12.9x, Bun case study, six dynamic-workflow pattern names, all remaining attribution fields, speaker names
+
+## [2026-06-12] ingest | Claude Skills Technical Report (Executive_Summary.pdf)
+
+### Source
+- Created: `wiki/sources/claude-skills-technical-report.md` — Skills runtime internals, three-level progressive disclosure, Skills API, sandboxing, trigger reliability
+- This PDF sat in `raw/attachments/` since 2026-05-02 and was never correctly ingested (see audit above); the two PNG diagrams in attachments are its figures
+- Reliability caveat noted on page: ChatGPT-generated research compilation, citations point to real Anthropic primary sources
+
+### Concepts updated
+- [[claude-skills]] — runtime internals source link
+- [[context-management]] — three-level loading as progressive-disclosure implementation
+
+## [2026-06-12] ingest | Top 5 Open-Source Agentic AI Frameworks in 2026
+
+### Source
+- Created: `wiki/sources/top-5-agentic-frameworks-2026.md` — AIMultiple benchmark of LangChain, LangGraph, AutoGen, CrewAI (2,000 runs across 5 tasks)
+- Raw file had been sitting in `raw/` since 2026-05-15 with no ingest (caught by lint)
+
+### Key insights
+- With the same LLM, framework loop architecture dominates agent behavior (pivot capacity, cost, failure modes)
+- Goal-centric (LangGraph/AutoGen, ~90% pivot on tool failure) vs plan-centric (CrewAI, 0% pivot) is the key behavioral split
+- CrewAI's retry/verification machinery can corrupt parameters the LLM originally got right
+- LangChain treats tool exceptions as fatal by default — resilience requires explicit configuration
+
+### Pages created/updated
+- Created: [[agentic-frameworks]] (concept) — first non-Claude-Code agentic content in the wiki
+- Updated: [[agentic-workflows]], [[automation]], [[self-annealing]], [[model-context-protocol]] — backlinks and framework context
+
+### Tags
+- #agentic-ai, #technology, #frameworks
+
+## [2026-06-12] lint | Wiki health check (2026-06-12)
+
+### Fixed
+- 3 true orphans: backlinks added for `anatomy-of-the-.claude-folder` (4 concepts), `prompting`, `prompt-engineering-hacks`
+- Phantom link `[[Nivetha Suruliraj]]` in `prompt-compression.md` frontmatter → plain text
+- Path-prefixed links in `prompt-engineering-hacks.md` → bare format
+- Placeholder Connections prose in `google-ai-prompt-engineering-course.md` → real wiki links
+- Index drift: added `best-practices-for-skill-creators` and `optimizing-skill-descriptions`; added Entities/Insights sections; re-filed `ai-2027-project`
+
+### Status
+- No contradictions, no duplicates, no stale content
+- Near-orphan leaf nodes accepted intentionally (documented in patterns.md)
+- Gap caught: un-ingested raw file → ingested same session (see entry above)
+
 ## [2026-06-05] lint | Wiki health check (2026-06-05)
 
 ### Fixed

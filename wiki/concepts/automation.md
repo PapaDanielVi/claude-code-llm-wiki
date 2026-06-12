@@ -2,7 +2,7 @@
 title: "Automation"
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-12
 tags:
   - automation
   - agentic-workflows
@@ -33,6 +33,7 @@ Agentic workflows are a form of advanced automation where the "automation engine
 
 - [[agentic-workflows]] — The current frontier of automation
 - [[self-annealing]] — Self-healing automation patterns
+- [[agentic-frameworks]] — Framework architecture determines how unattended an automated system can safely run
 
 ## Notes
 

@@ -2,7 +2,7 @@
 title: "Agentic Workflows"
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-12
 aliases:
   - "agentic AI"
   - "AI agents"
@@ -29,12 +29,13 @@ The fundamental mechanism is the **loop** (sometimes called the OODA loop or obs
 
 ## Core Components
 
-### The DO Framework (Directive Orchestration)
+### The DO Framework (Directive Orchestration and Execution)
 
-A structured approach to orchestrating agentic workflows:
+A structured approach to orchestrating agentic workflows, organized as a "filing cabinet" workspace ([[agentic-workflows-business-transcription]]):
 
-- **Directive**: Clear instruction or goal for the agent
-- **Orchestration**: Managing the flow between steps, loops, and sub-agents
+- **Directives** (`directives/` folder): one markdown file per workflow or capability (e.g., `scrape_leads.md`) stating the high-level goal — the operator declares *what*, the agent handles *how*
+- **Executions** (`executions/` folder): the run artifacts/outputs produced when directives are carried out
+- These two folders are the only required structure; add others (e.g., `resources/`) as needed
 
 ### Claude Skills
 
@@ -68,6 +69,7 @@ Spawning child agents from a parent agent for parallel or nested task execution.
 - [[model-context-protocol]] — Protocol for tool integration
 - [[automation]] — Related automation concepts
 - [[ai-scaffold-hierarchy]] — Scaffold hierarchy: prompts → skills → plugins → MCPs
+- [[agentic-frameworks]] — Open-source orchestration frameworks (LangChain, LangGraph, AutoGen, CrewAI) that implement the agentic loop outside Claude Code
 
 ## Notes
 

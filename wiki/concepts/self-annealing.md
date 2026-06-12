@@ -2,7 +2,7 @@
 title: "Self-Annealing (Self-Healing Workflows)"
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-12
 aliases:
   - "self-healing AI"
   - "workflow resilience"
@@ -38,6 +38,7 @@ Self-annealing refers to workflows that can detect when something goes wrong, fi
 - [[agentic-workflows]] — Self-annealing is a pattern within agentic workflows
 - [[automation]] — The resilience property of advanced automation
 - [[self-annealing-ai-agents-explained]] — Source with implementation details and ready-to-use protocol prompt
+- [[agentic-frameworks]] — Benchmark evidence that feedback-loop architectures (state machine, conversation loop) recover from tool failures far better than plan-centric ones
 
 ## Notes
 

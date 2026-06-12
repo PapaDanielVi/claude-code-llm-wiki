@@ -2,7 +2,7 @@
 title: "Model Context Protocol (MCP)"
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-12
 aliases:
   - "MCP"
   - "Anthropic MCP"
@@ -45,11 +45,13 @@ While MCP handles tool integration at the protocol level, Claude Skills provide 
 
 - [[agentic-workflows-business-transcription]] — Video course covering MCP in context of agentic workflows
 - [[agentic-workflows]] — Broader concept that MCP enables
+- [[anatomy-of-the-.claude-folder]] — MCP configuration can live in `.claude/`
 
 ## Connections
 
 - [[agentic-workflows]] — What MCP enables
 - [[claude-skills]] — Built on top of MCP
+- [[agentic-frameworks]] — Each framework defines tools its own way; MCP is the standardized alternative
 
 ## Notes
 
