@@ -2,12 +2,16 @@
 title: "Anthropic AI Interpretability Research"
 type: source
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-12
 tags: [ai-futures, existential-risk, research]
 aliases: ["interpretability", "mechanistic interpretability", "golden ticket"]
 ---
 
 # Anthropic AI Interpretability Research
+
+## ⚠️ Conflicts — Provenance Unverified (2026-06-12)
+
+**No raw document backing this page exists in the repo.** A 2026-06-12 audit of `raw/` found that the claimed source ("Executive Summary: Mechanistic Interpretability for Acting Virtuously") matches nothing on disk or in git history. The only Executive Summary in `raw/attachments/` is a ChatGPT research report about **Claude Skills** — a completely different topic — likely the document the 2026-05-06 ingest was *supposed* to digest. Internal red flags: the "golden ticket hypothesis" is not established Anthropic terminology, and the cited 2022 paper title does not match Anthropic's actual monosemanticity paper ("Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", 2023). **Treat all claims below as unverified until a raw source is supplied.** Proposed resolution (pending approval): delete this page and [[mechanistic-interpretability]], or re-ingest from a real document.
 
 ## Source
 **Executive Summary: Mechanistic Interpretability for Acting Virtuously**

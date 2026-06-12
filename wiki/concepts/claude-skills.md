@@ -50,6 +50,7 @@ MCP provides the transport, Skills provide the direction.
 - [[how-claude-code-works-large-codebases]] — Skills for progressive disclosure on-demand loading
 - [[introducing-dynamic-workflows]] — Skills invoked within dynamic workflow agents
 - [[anatomy-of-the-.claude-folder]] — Where skills live on disk (`.claude/skills/` vs `~/.claude/skills/`)
+- [[claude-skills-technical-report]] — Runtime internals: three-level progressive disclosure, ~100 tokens/skill metadata, sandboxing, Skills API
 
 ## Connections
 

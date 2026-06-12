@@ -1,5 +1,30 @@
 # Log
 
+## [2026-06-12] lint | Raw-vs-wiki provenance audit (full)
+
+### Critical finding (open)
+- `anthropic-interpretability` + `mechanistic-interpretability` have **no raw source** — the 2026-05-06 "Interpretability" ingest appears to have fabricated content instead of digesting `Executive_Summary.pdf` (which is about Claude Skills). Both pages flagged with ⚠️ Conflicts sections; deletion proposed, awaiting approval.
+
+### Fixed
+- "Andre Karpati" → **Andrej Karpathy** in `karpati-claude-best-practices` (speech-to-text artifact baked in as a real name); removed GitHub URL not present in the raw
+- Removed fabricated "Simon Willison" attribution + URL from `ai-scaffold-hierarchy` (speaker unidentified in raw)
+- `agentic-workflows-business-transcription` rewritten from TOC into real digest; DO framework corrected to "Directive Orchestration **and Execution**" here and in `agentic-workflows`
+- `ai-2027` TSMC claim tightened to ">80% of American AI chips"
+
+### Verified accurate
+- ai-2027 numerics, llm-dcp 12.9x, Bun case study, six dynamic-workflow pattern names, all remaining attribution fields, speaker names
+
+## [2026-06-12] ingest | Claude Skills Technical Report (Executive_Summary.pdf)
+
+### Source
+- Created: `wiki/sources/claude-skills-technical-report.md` — Skills runtime internals, three-level progressive disclosure, Skills API, sandboxing, trigger reliability
+- This PDF sat in `raw/attachments/` since 2026-05-02 and was never correctly ingested (see audit above); the two PNG diagrams in attachments are its figures
+- Reliability caveat noted on page: ChatGPT-generated research compilation, citations point to real Anthropic primary sources
+
+### Concepts updated
+- [[claude-skills]] — runtime internals source link
+- [[context-management]] — three-level loading as progressive-disclosure implementation
+
 ## [2026-06-12] ingest | Top 5 Open-Source Agentic AI Frameworks in 2026
 
 ### Source

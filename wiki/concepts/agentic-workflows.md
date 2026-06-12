@@ -29,12 +29,13 @@ The fundamental mechanism is the **loop** (sometimes called the OODA loop or obs
 
 ## Core Components
 
-### The DO Framework (Directive Orchestration)
+### The DO Framework (Directive Orchestration and Execution)
 
-A structured approach to orchestrating agentic workflows:
+A structured approach to orchestrating agentic workflows, organized as a "filing cabinet" workspace ([[agentic-workflows-business-transcription]]):
 
-- **Directive**: Clear instruction or goal for the agent
-- **Orchestration**: Managing the flow between steps, loops, and sub-agents
+- **Directives** (`directives/` folder): one markdown file per workflow or capability (e.g., `scrape_leads.md`) stating the high-level goal — the operator declares *what*, the agent handles *how*
+- **Executions** (`executions/` folder): the run artifacts/outputs produced when directives are carried out
+- These two folders are the only required structure; add others (e.g., `resources/`) as needed
 
 ### Claude Skills
 

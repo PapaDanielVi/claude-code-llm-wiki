@@ -2,7 +2,9 @@
 
 Last checked: 2026-06-12
 
-## Status: Healthy
+## Status: One Critical Open Item
+
+⚠️ **Open**: `anthropic-interpretability` + `mechanistic-interpretability` have no raw source (likely fabricated during the 2026-05-06 ingest). Flagged with Conflicts sections; deletion proposed — awaiting Danny's decision. See `meta/patterns.md` → "Raw-vs-Wiki Provenance Audit — 2026-06-12".
 
 ### Checks
 - [x] Contradictions between pages — none found

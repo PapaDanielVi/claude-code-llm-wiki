@@ -9,7 +9,7 @@ updated: 2026-06-12
 
 ## Sources
 - [ai-2027](sources/ai-2027.md) — source summary and key points from ai-2027.com
-- [anthropic-interpretability](sources/anthropic-interpretability.md) — Anthropic's mechanistic interpretability research and the "golden ticket" hypothesis
+- [anthropic-interpretability](sources/anthropic-interpretability.md) — ⚠️ provenance unverified (no raw source found, 2026-06-12 audit) — Anthropic's mechanistic interpretability research and the "golden ticket" hypothesis
 - [claude-agents-vs-skills](sources/claude-agents-vs-skills.md) — agents vs skills decision framework and soft skills for developers
 - [claude-code-skill-patterns](sources/claude-code-skill-patterns.md) — Claude Code skill authorship patterns, triggering mechanisms, and best practices
 - [claude-skills-build-first-assistant](sources/claude-skills-build-first-assistant.md) — practical beginner guide: skill creator, capability vs workflow skills, Co-work file integration
@@ -17,7 +17,7 @@ updated: 2026-06-12
 - [claude-code-data-analysis](sources/claude-code-data-analysis.md) — using Claude Code to analyze business spreadsheets: sales & customer data, reusable workflows, clarifying questions
 - [complete-guide-building-skills](sources/complete-guide-building-skills.md) — comprehensive guide to creating, evaluating, and managing skills for Claude
 - [anatomy-of-the-.claude-folder](sources/anatomy-of-the-.claude-folder.md) — Anatomy of the .claude folder: A complete guide to CLAUDE.md, custom commands, skills, agents, and permissions
-- [karpati-claude-best-practices](sources/karpati-claude-best-practices.md) — Andre Karpati's 4 principles: ask questions, simplicity first, surgical changes, goal-driven execution
+- [karpati-claude-best-practices](sources/karpati-claude-best-practices.md) — Andrej Karpathy's 4 principles: ask questions, simplicity first, surgical changes, goal-driven execution
 - [skill-authoring-best-practices](sources/skill-authoring-best-practices.md) — guide for writing effective Claude Skills
 - [skills-and-agents-rules](sources/skills-and-agents-rules.md) — comprehensive guide on skill philosophy, architecture, and operational rules
 - [agentic-workflows-business-transcription](sources/agentic-workflows-business-transcription.md) — video course transcription: fundamentals to advanced agentic patterns, DO framework, MCP, self-annealing, deployment
@@ -33,6 +33,7 @@ updated: 2026-06-12
 - [best-practices-for-skill-creators](sources/best-practices-for-skill-creators.md) — guide for writing effective skills grounded in real expertise
 - [optimizing-skill-descriptions](sources/optimizing-skill-descriptions.md) — skill description as trigger mechanism: imperative phrasing, eval queries, near-misses
 - [top-5-agentic-frameworks-2026](sources/top-5-agentic-frameworks-2026.md) — AIMultiple benchmark of LangChain, LangGraph, AutoGen, CrewAI (2,000 runs): framework architecture dominates agent behavior
+- [claude-skills-technical-report](sources/claude-skills-technical-report.md) — Skills internals: three-level progressive disclosure, Skills API, sandboxing, trigger reliability (from Executive_Summary.pdf)
 
 ## Concepts
 - [agentic-data-analysis](concepts/agentic-data-analysis.md) — using AI agents (Claude Code) to analyze business data without code
@@ -47,7 +48,7 @@ updated: 2026-06-12
 - [ai-alignment](concepts/ai-alignment.md) — alignment problem and safety techniques
 - [context-management](concepts/context-management.md) — token-efficient context architecture, progressive disclosure, memory strategies
 - [ida](concepts/ida.md) — Iterated Distillation and Amplification for self-improvement
-- [mechanistic-interpretability](concepts/mechanistic-interpretability.md) — reverse-engineering neural networks to understand AI internals
+- [mechanistic-interpretability](concepts/mechanistic-interpretability.md) — ⚠️ provenance unverified (sole source has no raw document) — reverse-engineering neural networks to understand AI internals
 - [neuralese](concepts/neuralese.md) — high-dimensional chain-of-thought bypassing text
 - [skill-evaluation](concepts/skill-evaluation.md) — systematic testing: trigger, constraint, ask, and bad-behavior tests
 - [skill-design](concepts/skill-design.md) — creating effective reusable agent instruction sets
