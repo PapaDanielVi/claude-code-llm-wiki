@@ -6,7 +6,7 @@ A living knowledge base for **Claude Code skills**, **context engineering**, **p
 
 This repository contains distilled knowledge about building agentic AI systems with Claude Code. It's organized as a personal wiki following the **LLM-Wiki pattern** — a structured approach to compounding knowledge through iterative ingestion, querying, and linting.
 
-**Current state** (2026-06-12): 45 wiki pages distilled from 23 raw source documents — 18 concepts, 26 source summaries, 1 entity.
+**Current state** (2026-06-17): 49 wiki pages distilled from 26 raw source documents — 19 concepts, 28 source summaries, 2 entities.
 
 The knowledge is organized into:
 
@@ -119,6 +119,12 @@ claude-code-llm-wiki/
 - **Effective prompting framework**: Brevity, clarity, structure, empirical testing (Task → Context → References → Evaluate → Iterate)
 - **Prompt compression**: Extract → Summarize → Optimize → Filter pipelines; LLM-DCP achieves up to 12.9x compression
 - See: [prompting.md](wiki/concepts/prompting.md)
+
+### Harness Engineering
+- **Agent = model + harness**: The harness is everything around the model (tools, loop, hooks, context policies, recovery paths); when an agent fails, the harness is usually the lever, not the model
+- **Guides and sensors**: Feedforward (guides that steer before acting) and feedback (sensors that catch errors after), computational vs inferential, the steering loop, keep quality left
+- **The ratchet and HaaS**: Locking in improvements so the system never regresses; harness-as-a-service and model-harness co-training
+- See: [harness-engineering.md](wiki/concepts/harness-engineering.md)
 
 ## Quality Control
 
