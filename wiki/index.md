@@ -2,7 +2,7 @@
 title: "claude-code-llm-wiki Index"
 type: index
 created: 2026-05-06
-updated: 2026-06-12
+updated: 2026-06-17
 ---
 
 # Index
@@ -34,6 +34,7 @@ updated: 2026-06-12
 - [optimizing-skill-descriptions](sources/optimizing-skill-descriptions.md) — skill description as trigger mechanism: imperative phrasing, eval queries, near-misses
 - [top-5-agentic-frameworks-2026](sources/top-5-agentic-frameworks-2026.md) — AIMultiple benchmark of LangChain, LangGraph, AutoGen, CrewAI (2,000 runs): framework architecture dominates agent behavior
 - [claude-skills-technical-report](sources/claude-skills-technical-report.md) — Skills internals: three-level progressive disclosure, Skills API, sandboxing, trigger reliability (from Executive_Summary.pdf)
+- [agent-harness-engineering](sources/agent-harness-engineering.md) — Addy Osmani on harness engineering: agent = model + harness, the skill-issue reframe, the ratchet, Ralph Loops, hooks, HaaS
 
 ## Concepts
 - [agentic-data-analysis](concepts/agentic-data-analysis.md) — using AI agents (Claude Code) to analyze business data without code
@@ -54,6 +55,7 @@ updated: 2026-06-12
 - [skill-design](concepts/skill-design.md) — creating effective reusable agent instruction sets
 - [soft-skills](concepts/soft-skills.md) — communication, leadership, conflict resolution, and career growth as Claude skills
 - [prompting](concepts/prompting.md) — effective prompting framework: principles for creating reliable, high-quality LLM outputs through brevity, clarity, structure, and testing
+- [harness-engineering](concepts/harness-engineering.md) — agent = model + harness; designing the loop, tools, hooks, context policies, and recovery paths around the model; the ratchet, HaaS, model-harness co-training
 
 ## Entities
 - [ai-2027-project](entities/ai-2027-project.md) — research scenario forecasting superhuman AI by 2027

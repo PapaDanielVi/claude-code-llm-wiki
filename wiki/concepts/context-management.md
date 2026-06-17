@@ -24,12 +24,16 @@ Agents load information in stages — only name/description at discovery, full i
 ### Divider Pattern
 Split CLAUDE.md/GEMINI.md/CODEX.md into multiple files (context, rules, etc.) and reference them in the root file. Agents load target references only when needed. Dramatically reduces token usage.
 
+### Context Rot
+Models get worse at reasoning and task completion as the window fills ([[agent-harness-engineering]]). A harness fights this with three techniques: compaction, tool-call offloading, and progressive disclosure of skills. For very long jobs, Anthropic adds **full context resets** — tear the session down and rebuild from a compact hand-off file, because compaction alone was not sufficient. Closer to onboarding a new engineer than to "memory."
+
 ### Context Compaction
 - Avoid long chat sessions — compact and move to a new session
 - Put context and memory in persistent files to prevent re-loading
 - Use RTK (Rust Token Killer) to reduce token overhead on CLI operations
 - Use Caveman to reduce token usage across sessions
 - **Prompt compression pipeline**: Extract → Summarize → Optimize → Filter → Output (see [[prompt-compression]]) for upstream compression before context even reaches the LLM
+- **Tool-call offloading**: for large tool outputs (e.g., a 2,000-line log), keep only head/tail tokens in context and offload the full text to the filesystem for read-on-demand ([[agent-harness-engineering]])
 
 ### Memory Strategy
 - Memory is transportable and every project must have memory
@@ -48,6 +52,8 @@ Don't use expensive models for easy tasks. Match model capability to task comple
 - Source: [[skills-and-agents-rules]] — operational rules for context management
 - Source: [[anatomy-of-the-.claude-folder]] — CLAUDE.md, `.claude/rules/`, and settings as the on-disk context layer
 - Source: [[claude-skills-technical-report]] — the three-level skill loading model as a concrete progressive-disclosure implementation
+- Related: [[harness-engineering]] — context management is the harness's mechanism for battling context rot
+- Source: [[agent-harness-engineering]] — compaction, tool-call offloading, progressive disclosure, and full context resets as harness primitives
 
 ## Notes
 

@@ -2,6 +2,13 @@
 
 Tracked patterns and anomalies across the wiki.
 
+## Ingest — 2026-06-17 (Agent Harness Engineering)
+
+- **New tag**: `#harness-engineering` introduced for the harness-design body of work. Not yet added to CLAUDE.md's domain-tag table (that table holds the 7 core domain tags; this is a topical tag like `agentic-workflows` and `token-optimization`, which also live outside the table).
+- **Gap — people entity pages**: this source leans on several named figures with no entity page yet: **Viv Trivedy** (coined "harness engineering" and "Harness-as-a-Service"), **Addy Osmani** (author), **Dex Horthy** / **HumanLayer** (the "skill issue" reframe), **Birgitta Böckeler**, **Fareed Khan**. The wiki currently has only one entity (`ai-2027-project`). Worth creating entity pages on the next ingest that touches the same people, rather than thin stubs now.
+- **Gap — Ralph Loop / hooks as standalone concepts**: both are currently folded into `harness-engineering` and `agentic-workflows`. If a future source goes deep on either (e.g., a dedicated Ralph Loop write-up), promote to its own concept page.
+- **Cross-source nuance (resolved, not a conflict)**: `agentic-frameworks` notes CrewAI's retry loop corrupting good parameters ("more self-review is not automatically safer"); this source argues planner/evaluator splits help. Reconciled on both pages: harm comes from a self-review retry mutating correct output, benefit comes from an independent evaluator. Who verifies matters more than how much.
+
 ## Raw-vs-Wiki Provenance Audit — 2026-06-12
 
 Full comparison of every `raw/` document against its digested wiki source page.

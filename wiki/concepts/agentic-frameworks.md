@@ -37,6 +37,8 @@ Agentic frameworks are the orchestration libraries (LangChain, LangGraph, AutoGe
 - [[model-context-protocol]] — MCP standardizes tool integration across systems, whereas each framework defines tools its own way
 - [[automation]] — error-recovery and pivot capacity determine how unattended a system can safely run
 - [[self-annealing]] — feedback-loop architectures (state machine, conversation loop) natively support detect-diagnose-recover patterns; plan-centric ones resist them
+- [[harness-engineering]] — these frameworks are the Harness-as-a-Service layer; the vendor Agent SDKs (Claude Agent SDK, Codex SDK, OpenAI Agents SDK) ship the same loop/tools/hooks/sandbox primitives
+- [[agent-harness-engineering]] — HaaS framing and the model-harness co-training loop that makes a model feel different across frameworks
 
 ## Source
 
@@ -46,3 +48,4 @@ Agentic frameworks are the orchestration libraries (LangChain, LangGraph, AutoGe
 
 - The wiki's existing agentic content is Claude Code-centric; this page is the first coverage of the broader open-source framework ecosystem.
 - *Inference (not yet confirmed by sources)*: the benchmark's "goal-centric vs plan-centric" split maps onto Claude Code's dynamic workflow patterns — loop-until-done and adversarial verification assume goal-centric agents. A future source comparing Claude Code's orchestration with these frameworks would confirm or refute this.
+- On verification: this page's "verification machinery can hurt" (CrewAI's retry loop corrupting good parameters) and [[harness-engineering]]'s claim that planner/evaluator splits help are not in conflict. The harm comes from a self-review retry mutating correct output; the benefit comes from an *independent* evaluator agent. Who verifies, and how, matters more than how much.

@@ -324,3 +324,31 @@ All lint checks clean: no contradictions, no stale claims, no orphans, no gaps, 
 
 ### Tags
 - #claude-code, #agentic-workflows, #dynamic-workflows, #patterns
+
+## [2026-06-17] ingest | Agent Harness Engineering (Addy Osmani)
+
+### Source
+- Created: `wiki/sources/agent-harness-engineering.md` — Addy Osmani's synthesis of harness engineering
+
+### Concepts
+- Created: `wiki/concepts/harness-engineering.md` — new central concept (agent = model + harness)
+
+### Key insights
+- **agent = model + harness** (Viv Trivedy): a raw model becomes an agent only once a harness adds state, tool execution, feedback loops, and constraints
+- **Skill-issue reframe** (HumanLayer): most failures are config, not model problems. Terminal Bench 2.0 — same model, Top 30 → Top 5 by changing only the harness
+- **The ratchet**: every agent mistake becomes a permanent rule/hook; every line of AGENTS.md traces to a real failure
+- **Battling context rot**: compaction, tool-call offloading, progressive disclosure, plus Anthropic's full context resets
+- **Long-horizon**: Ralph Loop, planning, planner/generator/evaluator splits, sprint contract
+- **Hooks**: success is silent, failures are verbose
+- **Harnesses don't shrink, they move**; model-harness co-training loop; Harness-as-a-Service (HaaS)
+
+### Pages updated (bidirectional links)
+- [[context-management]] — added Context Rot section, tool-call offloading, full context resets
+- [[agentic-workflows]] — added Long-Horizon Execution Patterns section (Ralph Loop, planner/evaluator, hooks)
+- [[agentic-frameworks]] — HaaS / Agent SDKs; resolved verification-nuance vs CrewAI retry finding
+- [[model-context-protocol]] — tool descriptions as prompt-injection surface; fewer-focused-tools argument
+- [[self-annealing]] — ratchet as human-driven self-annealing; trace-analysis frontier
+- [[ai-scaffold-hierarchy]] — linked as the user-side twin of the engineering discipline
+
+### Tags
+- #harness-engineering (new), #agentic-ai, #technology, #ai-futures

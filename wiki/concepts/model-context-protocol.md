@@ -52,8 +52,10 @@ While MCP handles tool integration at the protocol level, Claude Skills provide 
 - [[agentic-workflows]] — What MCP enables
 - [[claude-skills]] — Built on top of MCP
 - [[agentic-frameworks]] — Each framework defines tools its own way; MCP is the standardized alternative
+- [[harness-engineering]] — MCP servers are harness tools; their descriptions are trusted prompt text and a prompt-injection surface
 
 ## Notes
 
 - MCP replaces the need for custom tool-wrapping code for each integration
 - Key differentiator from simpler agentic systems: standardized, discoverable tool interfaces rather than hardcoded integrations
+- **Security caveat** ([[agent-harness-engineering]]): a tool's name, description, and schema get stamped into the prompt every request, so any MCP server you install is trusted text the model reads. A sloppy or malicious MCP can prompt-inject the agent before you type anything. This is also an argument for fewer, focused tools — ten the model can hold in its head beat fifty overlapping ones.

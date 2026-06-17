@@ -70,6 +70,8 @@ Spawning child agents from a parent agent for parallel or nested task execution.
 - [[automation]] — Related automation concepts
 - [[ai-scaffold-hierarchy]] — Scaffold hierarchy: prompts → skills → plugins → MCPs
 - [[agentic-frameworks]] — Open-source orchestration frameworks (LangChain, LangGraph, AutoGen, CrewAI) that implement the agentic loop outside Claude Code
+- [[harness-engineering]] — the discipline of designing the loop, tools, hooks, and recovery paths these workflows run on
+- [[agent-harness-engineering]] — Ralph Loop, planning, and planner/evaluator splits as long-horizon execution patterns
 
 ## Notes
 
@@ -95,3 +97,12 @@ Spawning child agents from a parent agent for parallel or nested task execution.
 6. **Loop Until Done**: Iterate until specific outcome achieved (no fixed pass count, good for flaky tests)
 
 Patterns can be stacked (e.g., fan out → adversarial verify → loop until clean).
+
+### Long-Horizon Execution Patterns
+
+From harness engineering ([[agent-harness-engineering]]), the techniques that keep an agent coherent past a single context window:
+
+- **Ralph Loop**: a hook intercepts the model's attempt to exit and re-injects the original prompt into a fresh context window, forcing continuation against a completion goal. Each iteration starts clean but reads prior state from the filesystem — turning a single-session agent into a multi-session one.
+- **Planning**: the model decomposes a goal into steps in a plan file on disk; the harness reminds it to use the file and runs self-verification hooks (a test suite whose failures loop back as error text).
+- **Planner / generator / evaluator splits**: separating generation from evaluation into distinct agents outperforms self-evaluation, because agents skew positive grading their own work ("GANs for prose"). The **sprint contract** has generator and evaluator agree on what "done" means before code is written, which catches scope drift early.
+- **Hooks as enforcement**: success is silent, failures are verbose — a passing check is invisible, a failing one injects its error into the loop for self-correction.

@@ -79,6 +79,8 @@ A comprehensive explainer on the "agentic scaffold" - the middleware layer surro
 - [[claude-skills]] — skills as reusable instruction sets
 - [[agentic-workflows]] — the broader context of goal-driven AI processes
 - [[automation]] — packaging repeatable work into plugins
+- [[harness-engineering]] — the engineering discipline around this scaffold: deriving each piece from a behavior, ratcheting constraints from failures, enforcing them with hooks
+- [[agent-harness-engineering]] — `agent = model + harness`; same "suit around the model" idea told from the engineering side
 
 ## Notes
 
