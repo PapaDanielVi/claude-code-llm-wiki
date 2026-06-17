@@ -2,6 +2,12 @@
 
 Tracked patterns and anomalies across the wiki.
 
+## Ingest — 2026-06-17 (Harness Engineering for Coding Agent Users, Böckeler)
+
+- **Gap filled — Birgitta Böckeler entity**: the 2026-06-17 Addy Osmani ingest flagged her as a missing entity. Her own article is now ingested, so `entities/birgitta-bockeler.md` exists. Remaining people gaps unchanged: **Viv Trivedy**, **Addy Osmani**, **Dex Horthy / HumanLayer**, **Fareed Khan** — create on the next source that goes deep on them rather than stubbing now.
+- **Two sources, one concept, no conflict**: `harness-engineering` (concept) now has two sources. Böckeler is the originating framing (guides/sensors, computational/inferential, regulation categories); Osmani is the synthesis (ratchet, hooks, HaaS). They agree; Osmani cites Böckeler. The concept page now carries both lenses. Watch for future bloat — if it keeps growing, consider splitting "guides and sensors" into its own concept page.
+- **Possible future concept page**: "guides and sensors" / "feedforward and feedback controls" is a distinctive vocabulary currently folded into `harness-engineering`. Promote to its own concept if another source uses it heavily.
+
 ## Ingest — 2026-06-17 (Agent Harness Engineering)
 
 - **New tag**: `#harness-engineering` introduced for the harness-design body of work. Not yet added to CLAUDE.md's domain-tag table (that table holds the 7 core domain tags; this is a topical tag like `agentic-workflows` and `token-optimization`, which also live outside the table).

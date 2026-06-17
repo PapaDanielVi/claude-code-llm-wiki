@@ -4,8 +4,8 @@ type: concept
 created: 2026-06-17
 updated: 2026-06-17
 tags: [harness-engineering, agentic-ai, technology, ai-futures]
-aliases: ["agent harness", "harness design", "agent = model + harness"]
-sources: [agent-harness-engineering]
+aliases: ["agent harness", "harness design", "agent = model + harness", "guides and sensors"]
+sources: [agent-harness-engineering, harness-engineering-coding-agent-users]
 ---
 
 ## Summary
@@ -14,7 +14,21 @@ Harness engineering is the discipline of designing everything around a model so 
 
 The load-bearing claim: a decent model with a great harness beats a great model with a bad harness. Most of the leverage people attribute to model choice actually lives in the harness, which is your surface area, not the provider's. [[agent-harness-engineering]]
 
+Birgitta Böckeler's originating framing scopes this to the *user harness* a developer builds for their own system, distinct from the model and from the *builder harness* the coding-agent vendor ships. Its job is twofold: raise the probability the agent gets it right the first time, and self-correct issues before a human reviews them. [[harness-engineering-coding-agent-users]]
+
 ## Key Points
+
+### Guides and sensors, computational and inferential
+Böckeler's framing organizes the user harness along two orthogonal axes. **Guides feed forward** into generation (AGENTS.md, skills, rules, reference docs, how-tos, LSPs, CLIs, codemods); **sensors feed back**, pointing at the agent and into its self-correcting loop (review agents, static analysis, logs, the browser). Crossing that with execution type: **computational** controls are deterministic, fast, CPU-run, and reliable (tests, linters, type checkers, structural analysis), cheap enough for every change; **inferential** controls are semantic, GPU/NPU-run, slower, costlier, and non-deterministic (AI review, LLM-as-judge) but allow rich guidance and judgment. Coding conventions are feedforward + inferential; codemods are feedforward + computational; an ArchUnit module-boundary check is feedback + computational; review instructions are feedback + inferential. [[harness-engineering-coding-agent-users]]
+
+### The steering loop and keeping quality left
+The human's real job is to **steer** by iterating on the harness: when an issue recurs, tighten the guides and sensors so it becomes less probable or impossible. (This is the same idea as the ratchet below, framed as a control loop.) Borrowing from CI/CD, sensors are distributed across the change lifecycle by cost and speed and pushed as far **left** as possible: fast cheap checks (linters, quick tests, a basic review agent) run pre-commit; expensive ones (mutation testing, broad architectural review) run post-integration. Separately, **continuous drift/health sensors** run outside the change lifecycle against the whole codebase: dead-code detection, coverage-quality analysis, dependency scanners, and runtime monitors watching SLOs or sampling response quality. [[harness-engineering-coding-agent-users]]
+
+### Regulation categories
+The harness is a cybernetic governor; it helps to qualify what it regulates, because harnessability varies by category. **Maintainability** (internal code quality) is the easiest today: computational sensors reliably catch structural problems, LLMs partially catch semantic ones (semantic duplication, over-engineering) but expensively, and neither reliably catches misdiagnosis, unnecessary features, or misunderstood instructions. **Architecture fitness** defines and checks architecture characteristics via fitness functions (performance skills paired with perf tests, logging standards paired with log-quality reflection). **Behaviour** (does the app do what's needed?) is the open problem: today people feed forward a spec and feed back a green AI-generated test suite plus manual testing, which over-trusts AI-written tests. The [approved fixtures](https://lexler.github.io/augmented-coding-patterns/patterns/approved-fixtures/) pattern helps selectively but isn't a wholesale answer. [[harness-engineering-coding-agent-users]]
+
+### Harnessability and harness templates
+Not every codebase is equally amenable to harnessing. Strong typing gives type-checking for free; clear module boundaries afford architectural rules; frameworks like Spring abstract away whole classes of mistakes. Greenfield teams can bake harnessability in from day one; legacy teams face the harder problem that the harness is most needed where it is hardest to build. Böckeler predicts **harness templates**: per-topology bundles of guides and sensors (a Node dashboard, a JVM CRUD service, a Go event processor), an evolution of service templates, with the same drift and versioning problems, possibly worse given non-deterministic controls. [[harness-engineering-coding-agent-users]]
 
 ### The "skill issue" reframe
 Most agent failures are configuration problems, not model problems (HumanLayer). The failure is usually legible and fixable in the harness: an unknown convention goes into `AGENTS.md`, a destructive command gets a blocking hook, a 40-step task gets split into planner + executor. Proof point: on Terminal Bench 2.0, the same model scores far lower inside one harness than another; Viv's team moved an agent Top 30 → Top 5 by changing only the harness. "The gap between what today's models can do and what you see them doing is largely a harness gap." [[agent-harness-engineering]]
@@ -52,6 +66,9 @@ The shift from LLM APIs (return a completion) to harness APIs (return a runtime)
 
 ## Connections
 
+- [[harness-engineering-coding-agent-users]] — Böckeler's originating article; supplies the guides/sensors, computational/inferential, regulation-category, and harness-template framing
+- [[agent-harness-engineering]] — Addy Osmani's synthesis; supplies the ratchet, hooks, HaaS, and the `agent = model + harness` equation
+- [[birgitta-bockeler]] — author of the originating framing
 - [[ai-scaffold-hierarchy]] — the same "scaffolding around the model" idea from the user's side (prompts → skills → plugins → MCPs); harness engineering is the engineering discipline that hardens it via the ratchet and hooks
 - [[context-management]] — context rot, compaction, tool-call offloading, progressive disclosure, and context resets are the harness's context-engineering toolkit
 - [[agentic-workflows]] — planning, self-verification, planner/evaluator splits, and the Ralph Loop are the long-horizon execution layer

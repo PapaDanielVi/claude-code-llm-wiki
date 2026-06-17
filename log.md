@@ -1,5 +1,21 @@
 # Log
 
+## [2026-06-17] ingest | Harness Engineering for Coding Agent Users (Birgitta Böckeler)
+
+### Source
+- Created: `wiki/sources/harness-engineering-coding-agent-users.md` — Böckeler's originating mental model (martinfowler.com, 2026-04-02). The user harness as guides (feedforward) and sensors (feedback), crossed with computational vs inferential; the steering loop; keep quality left across the change lifecycle; continuous drift sensors; three regulation categories (maintainability, architecture fitness, behaviour); harnessability; harness templates.
+- This is the upstream primary source that the earlier `agent-harness-engineering` (Addy Osmani) ingest cites. No contradiction between them — complementary lenses on `agent = model + harness`.
+
+### Entity created
+- `wiki/entities/birgitta-bockeler.md` — fills the gap flagged in patterns.md (2026-06-17). Second source now touches her and she originated the framing, so a real page rather than a stub.
+
+### Pages updated
+- [[harness-engineering]] (concept) — added guides/sensors, computational/inferential, the steering loop + keep-quality-left, regulation categories, and harnessability/harness-templates sections; added the new source to frontmatter and Connections
+- [[agent-harness-engineering]] (source) — cross-linked the originating article and the new Böckeler entity; updated the gap note
+- [[self-annealing]] — "garbage collection" / "janitor army" drift scans as self-annealing for codebase health
+- [[claude-skills]] — skills as inferential feedforward guides / feedback sensors
+- `wiki/index.md` — new source, new entity, refreshed concept summary
+
 ## [2026-06-12] lint | Raw-vs-wiki provenance audit (full)
 
 ### Critical finding (open)

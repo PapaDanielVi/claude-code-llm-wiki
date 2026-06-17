@@ -40,6 +40,7 @@ Self-annealing refers to workflows that can detect when something goes wrong, fi
 - [[self-annealing-ai-agents-explained]] — Source with implementation details and ready-to-use protocol prompt
 - [[agentic-frameworks]] — Benchmark evidence that feedback-loop architectures (state machine, conversation loop) recover from tool failures far better than plan-centric ones
 - [[harness-engineering]] — the ratchet ("every mistake becomes a rule") is the human-driven version of self-annealing; agents that analyze their own traces to fix harness-level failures are the automated frontier
+- [[harness-engineering-coding-agent-users]] — the OpenAI "garbage collection" and Thoughtworks "janitor army" continuous drift scans, where agents detect drift and suggest fixes, are self-annealing applied to codebase health
 
 ## Notes
 

@@ -56,6 +56,7 @@ MCP provides the transport, Skills provide the direction.
 
 - [[agentic-workflows]] — Skills are building blocks of agentic workflows
 - [[model-context-protocol]] — The protocol layer that skills leverage for tool access
+- [[harness-engineering-coding-agent-users]] — skills are the main inferential feedforward guide in the user harness (coding conventions, how-tos), and inferential feedback sensors when they encode review instructions
 
 ## Notes
 

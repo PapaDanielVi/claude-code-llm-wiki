@@ -35,6 +35,7 @@ updated: 2026-06-17
 - [top-5-agentic-frameworks-2026](sources/top-5-agentic-frameworks-2026.md) — AIMultiple benchmark of LangChain, LangGraph, AutoGen, CrewAI (2,000 runs): framework architecture dominates agent behavior
 - [claude-skills-technical-report](sources/claude-skills-technical-report.md) — Skills internals: three-level progressive disclosure, Skills API, sandboxing, trigger reliability (from Executive_Summary.pdf)
 - [agent-harness-engineering](sources/agent-harness-engineering.md) — Addy Osmani on harness engineering: agent = model + harness, the skill-issue reframe, the ratchet, Ralph Loops, hooks, HaaS
+- [harness-engineering-coding-agent-users](sources/harness-engineering-coding-agent-users.md) — Birgitta Böckeler's originating framing: the user harness as guides (feedforward) and sensors (feedback), computational vs inferential, the steering loop, keep quality left, regulation categories, harness templates
 
 ## Concepts
 - [agentic-data-analysis](concepts/agentic-data-analysis.md) — using AI agents (Claude Code) to analyze business data without code
@@ -55,10 +56,11 @@ updated: 2026-06-17
 - [skill-design](concepts/skill-design.md) — creating effective reusable agent instruction sets
 - [soft-skills](concepts/soft-skills.md) — communication, leadership, conflict resolution, and career growth as Claude skills
 - [prompting](concepts/prompting.md) — effective prompting framework: principles for creating reliable, high-quality LLM outputs through brevity, clarity, structure, and testing
-- [harness-engineering](concepts/harness-engineering.md) — agent = model + harness; designing the loop, tools, hooks, context policies, and recovery paths around the model; the ratchet, HaaS, model-harness co-training
+- [harness-engineering](concepts/harness-engineering.md) — agent = model + harness; guides (feedforward) and sensors (feedback), computational vs inferential, the steering loop, regulation categories; designing the loop, tools, hooks, context policies, and recovery paths; the ratchet, HaaS, model-harness co-training
 
 ## Entities
 - [ai-2027-project](entities/ai-2027-project.md) — research scenario forecasting superhuman AI by 2027
+- [birgitta-bockeler](entities/birgitta-bockeler.md) — Thoughtworks technologist; author of the originating guides-and-sensors framing for harness engineering
 
 ## Insights
 - (none yet)

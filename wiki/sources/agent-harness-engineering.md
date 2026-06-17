@@ -87,6 +87,8 @@ The post synthesizes work from Viv Trivedy ("Anatomy of an Agent Harness", and t
 ## Connections
 
 - [[harness-engineering]] — the concept page distilled from this source
+- [[harness-engineering-coding-agent-users]] — Birgitta Böckeler's originating article that this post cites; the guides/sensors framing behind this synthesis
+- [[birgitta-bockeler]] — one of the figures this source builds on, now with an entity page
 - [[ai-scaffold-hierarchy]] — the "scaffold" / "agentic suit" framing is the same idea told through prompts → skills → plugins → MCPs; this source supplies the engineering discipline around it
 - [[context-management]] — context rot, compaction, tool-call offloading, progressive disclosure, and full context resets all originate here
 - [[agentic-workflows]] — planning, self-verification, planner/evaluator splits, and the Ralph Loop are the long-horizon execution patterns
@@ -96,7 +98,7 @@ The post synthesizes work from Viv Trivedy ("Anatomy of an Agent Harness", and t
 
 ## Notes
 
-- People worth a future entity page (gap): **Viv Trivedy** (coined "harness engineering" and "Harness-as-a-Service"), **Addy Osmani** (author), **Dex Horthy** / **HumanLayer** (the "skill issue" reframe), **Birgitta Böckeler**, **Fareed Khan** (estimated Claude Code architecture breakdown).
+- People worth a future entity page (gap): **Viv Trivedy** (coined "harness engineering" and "Harness-as-a-Service"), **Addy Osmani** (author), **Dex Horthy** / **HumanLayer** (the "skill issue" reframe), **Fareed Khan** (estimated Claude Code architecture breakdown). **Birgitta Böckeler** now has an entity page ([[birgitta-bockeler]]) following the ingest of her own article.
 - Fareed Khan's annotated Claude Code architecture maps nearly every concept above to a named component: knowledge layer (context injection), memory store + worktree isolator (loop state), permission gate (destructive-action hooks), multi-agent layer (subagent context firewalls), tool dispatch (where MCP and bash plug in).
 - Nuance vs [[agentic-frameworks]]: that page notes CrewAI's retry loop *corrupting* parameters ("more self-review is not automatically safer"). This source argues separating generation from evaluation into distinct agents *does* help. Not a contradiction: the harm is from a self-review retry mutating good output; the benefit is from an independent evaluator. Both point to the same lesson — who verifies, and how, matters more than how much.
 
